@@ -374,9 +374,9 @@ a { color: var(--green-700); }
 .shot img {
   display: block;
   width: 100%;
-  height: clamp(220px, 30vw, 320px);
+  height: clamp(300px, 38vw, 460px);
   object-fit: cover;
-  object-position: center 48%;
+  object-position: center 46%;
 }
 .shot figcaption {
   padding: 11px 16px;
