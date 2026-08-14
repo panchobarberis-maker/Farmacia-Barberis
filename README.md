@@ -51,7 +51,7 @@ vercel --prod
 
 Datos confirmados:
 
-- **Teléfono**: 0294 452-4500
+- **Teléfono**: 0294 443-3222 (`tel:+542944433222`)
 - **WhatsApp**: 2944 12-9060 (`https://wa.me/5492944129060`)
 - **Horarios**: lunes a sábado de 09:00 a 20:00. Domingo cerrado.
 
