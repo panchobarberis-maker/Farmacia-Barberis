@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://farmaciabarberis.vercel.app/sitemap.xml
+Sitemap: https://farmacia-barberis.vercel.app/sitemap.xml

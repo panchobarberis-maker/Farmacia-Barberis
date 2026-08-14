@@ -55,7 +55,7 @@ Estos datos están cargados con valores estimados y conviene confirmarlos:
   - `index.html` → tabla `#hoursTable` y el bloque `openingHoursSpecification` del JSON-LD
 - **WhatsApp**: los botones apuntan a `https://wa.me/542944524500`. Si el WhatsApp del negocio es otro número, cambialo en `index.html`.
 - **Puntuación de Google**: el JSON-LD declara `ratingValue: 4.5`. Ajustalo al valor real del perfil.
-- **Dominio**: las URLs canónicas usan `https://farmaciabarberis.vercel.app/`. Si se conecta un dominio propio, reemplazalo en `index.html`, `robots.txt` y `sitemap.xml`.
+- **Dominio**: las URLs canónicas usan `https://farmacia-barberis.vercel.app/`. Si se conecta un dominio propio, reemplazalo en `index.html`, `robots.txt` y `sitemap.xml`.
 
 ## Cambiar los horarios
 
