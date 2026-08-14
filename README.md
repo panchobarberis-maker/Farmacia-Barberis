@@ -86,7 +86,7 @@ se visite el sitio.
 
 ## Caché
 
-`styles.css` y `script.js` se enlazan con un sufijo de versión (`?v=2`) porque
+`styles.css` y `script.js` se enlazan con un sufijo de versión (`?v=3`) porque
 sus nombres no llevan hash. **Si los editás, subí ese número** en `index.html`
 — si no, los navegadores que ya visitaron el sitio pueden seguir usando la
 copia vieja.
