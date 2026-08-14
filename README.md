@@ -12,7 +12,7 @@ styles.css     Estilos
 script.js      Menú móvil, estado abierto/cerrado, horario del día
 fachada.webp   Foto del local (hero)
 favicon.svg    Ícono del sitio
-og.svg         Imagen para compartir en redes / WhatsApp
+og.svg / og.png  Imagen para compartir en redes y WhatsApp
 vercel.json    Cabeceras y caché
 robots.txt     SEO
 sitemap.xml    SEO
@@ -53,11 +53,10 @@ Datos confirmados:
 
 - **Teléfono**: 0294 452-4500
 - **WhatsApp**: 2944 12-9060 (`https://wa.me/5492944129060`)
-- **Horarios**: lunes a sábado de 09:00 a 20:00
+- **Horarios**: lunes a sábado de 09:00 a 20:00. Domingo cerrado.
 
-Pendientes de confirmar:
+Pendiente de confirmar:
 
-- **Domingo**: figura 10:00 – 13:00, es una estimación. Si no abren, borrá la línea `0:` de `HORARIOS` en `script.js`, la fila del domingo en la tabla y su entrada en el JSON-LD.
 - **Puntuación de Google**: el JSON-LD declara `ratingValue: 4.5`. Ajustalo al valor real del perfil.
 
 Si cambian los horarios hay que tocar **tres** lugares y deben coincidir:

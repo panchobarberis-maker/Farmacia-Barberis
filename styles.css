@@ -486,6 +486,7 @@ a { color: var(--green-700); }
 .hours th, .hours td { padding: 13px 18px; font-size: 15px; text-align: left; }
 .hours th { font-weight: 500; color: var(--ink-soft); }
 .hours td { font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+.hours tr.closed-day td { color: var(--ink-soft); font-weight: 500; }
 .hours tr.today { background: var(--green-50); }
 .hours tr.today th, .hours tr.today td { color: var(--green-800); font-weight: 700; }
 

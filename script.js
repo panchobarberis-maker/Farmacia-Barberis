@@ -5,7 +5,7 @@
 
   /* Horarios de atención. 0 = domingo … 6 = sábado. Editá acá para cambiar la web. */
   var HORARIOS = {
-    0: { abre: "10:00", cierra: "13:00" },
+    /* Domingo cerrado: no lleva entrada. */
     1: { abre: "09:00", cierra: "20:00" },
     2: { abre: "09:00", cierra: "20:00" },
     3: { abre: "09:00", cierra: "20:00" },
