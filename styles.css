@@ -274,7 +274,7 @@ a { color: var(--green-700); }
   position: relative;
   overflow: hidden;
   background: linear-gradient(180deg, var(--green-50), #fff 70%);
-  padding: clamp(48px, 8vw, 96px) 0 clamp(56px, 8vw, 100px);
+  padding: clamp(48px, 8vw, 96px) 0 0;
 }
 .hero-glow {
   position: absolute;
@@ -363,28 +363,30 @@ a { color: var(--green-700); }
 /* Columna derecha: foto + tarjeta de datos */
 .hero-side { display: grid; gap: 18px; }
 
-.shot {
-  margin: 0;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-md);
+/* Foto de la fachada, de borde a borde */
+.shot-wide {
+  position: relative;
+  margin: clamp(36px, 5vw, 60px) 0 0;
+  width: 100%;
   background: var(--green-50);
+  overflow: hidden;
 }
-.shot img {
+.shot-wide img {
   display: block;
   width: 100%;
-  height: clamp(300px, 38vw, 460px);
+  height: clamp(340px, 42vw, 620px);
   object-fit: cover;
-  object-position: center 46%;
+  object-position: center 44%;
 }
-.shot figcaption {
-  padding: 11px 16px;
-  background: #fff;
-  border-top: 1px solid var(--line);
-  font-size: 13px;
+.shot-wide figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 34px clamp(20px, 5vw, 56px) 16px;
+  background: linear-gradient(to top, rgba(6,61,34,.82), transparent);
+  color: #fff;
+  font-size: 14px;
   font-weight: 600;
-  color: var(--ink-soft);
+  text-shadow: 0 1px 3px rgba(0,0,0,.4);
 }
 
 .hero-card {
