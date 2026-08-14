@@ -10,6 +10,7 @@ HTML, CSS y JavaScript puros. Sin build, sin dependencias, sin framework: se sir
 index.html     Toda la página (hero, servicios, historia, horarios, ubicación)
 styles.css     Estilos
 script.js      Menú móvil, estado abierto/cerrado, horario del día
+fachada.webp   Foto del local (hero)
 favicon.svg    Ícono del sitio
 og.svg         Imagen para compartir en redes / WhatsApp
 vercel.json    Cabeceras y caché
@@ -48,14 +49,25 @@ vercel --prod
 
 ## Qué hay que revisar antes de publicar
 
-Estos datos están cargados con valores estimados y conviene confirmarlos:
+Datos confirmados:
 
-- **Horarios**: están en dos lugares y deben coincidir.
-  - `script.js` → constante `HORARIOS` (controla el cartel de "Abierto / Cerrado")
-  - `index.html` → tabla `#hoursTable` y el bloque `openingHoursSpecification` del JSON-LD
-- **WhatsApp**: los botones apuntan a `https://wa.me/542944524500`. Si el WhatsApp del negocio es otro número, cambialo en `index.html`.
+- **Teléfono**: 0294 452-4500
+- **WhatsApp**: 2944 12-9060 (`https://wa.me/5492944129060`)
+- **Horarios**: lunes a sábado de 09:00 a 20:00
+
+Pendientes de confirmar:
+
+- **Domingo**: figura 10:00 – 13:00, es una estimación. Si no abren, borrá la línea `0:` de `HORARIOS` en `script.js`, la fila del domingo en la tabla y su entrada en el JSON-LD.
 - **Puntuación de Google**: el JSON-LD declara `ratingValue: 4.5`. Ajustalo al valor real del perfil.
-- **Dominio**: las URLs canónicas usan `https://farmacia-barberis.vercel.app/`. Si se conecta un dominio propio, reemplazalo en `index.html`, `robots.txt` y `sitemap.xml`.
+
+Si cambian los horarios hay que tocar **tres** lugares y deben coincidir:
+
+- `script.js` → constante `HORARIOS` (controla el cartel de "Abierto / Cerrado")
+- `index.html` → tabla `#hoursTable`
+- `index.html` → bloque `openingHoursSpecification` del JSON-LD
+- `index.html` → columna "Horarios" del pie
+
+**Dominio**: las URLs canónicas usan `https://farmacia-barberis.vercel.app/`. Si se conecta un dominio propio, reemplazalo en `index.html`, `robots.txt` y `sitemap.xml`.
 
 ## Cambiar los horarios
 

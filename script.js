@@ -6,12 +6,12 @@
   /* Horarios de atención. 0 = domingo … 6 = sábado. Editá acá para cambiar la web. */
   var HORARIOS = {
     0: { abre: "10:00", cierra: "13:00" },
-    1: { abre: "09:00", cierra: "21:00" },
-    2: { abre: "09:00", cierra: "21:00" },
-    3: { abre: "09:00", cierra: "21:00" },
-    4: { abre: "09:00", cierra: "21:00" },
-    5: { abre: "09:00", cierra: "21:00" },
-    6: { abre: "09:00", cierra: "21:00" }
+    1: { abre: "09:00", cierra: "20:00" },
+    2: { abre: "09:00", cierra: "20:00" },
+    3: { abre: "09:00", cierra: "20:00" },
+    4: { abre: "09:00", cierra: "20:00" },
+    5: { abre: "09:00", cierra: "20:00" },
+    6: { abre: "09:00", cierra: "20:00" }
   };
 
   var DIAS = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];

@@ -1,18 +1,20 @@
 /* Farmacia Barberis — landing */
 
 :root {
-  --green-900: #0a3f2f;
-  --green-800: #0f5a42;
-  --green-700: #0f6b4f;
-  --green-600: #14805e;
-  --green-100: #dff0e8;
-  --green-50:  #f1f8f4;
+  /* Verdes tomados del cartel de la fachada (#208050) */
+  --green-900: #063d22;
+  --green-800: #0d5f36;
+  --green-700: #12783f;
+  --green-600: #208050;
+  --green-500: #2a9a5f;
+  --green-100: #d9efe1;
+  --green-50:  #f0faf4;
 
   --ink:      #10241d;
   --ink-soft: #4b6159;
   --line:     #dfe7e3;
   --bg:       #ffffff;
-  --bg-soft:  #f6faf8;
+  --bg-soft:  #f5faf7;
   --accent:   #e8654f;
 
   --radius: 16px;
@@ -102,6 +104,9 @@ a { color: var(--green-700); }
   box-shadow: none;
 }
 .btn-ghost:hover { background: var(--green-50); border-color: var(--green-100); }
+
+.btn-wa { --btn-bg: #1faf54; }
+.btn-wa:hover { background: #199447; }
 
 .link {
   display: inline-block;
@@ -291,14 +296,54 @@ a { color: var(--green-700); }
 }
 .trust span { font-size: 13.5px; color: var(--ink-soft); }
 
+/* Nombre grande del hero */
+.h1-name {
+  display: block;
+  color: var(--green-600);
+  letter-spacing: -.03em;
+}
+.tagline {
+  margin: 0 0 18px;
+  font-size: clamp(17px, 1.9vw, 21px);
+  font-weight: 600;
+  color: var(--green-800);
+}
+
+/* Columna derecha: foto + tarjeta de datos */
+.hero-side { display: grid; gap: 18px; }
+
+.shot {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-md);
+  background: var(--green-50);
+}
+.shot img {
+  display: block;
+  width: 100%;
+  height: clamp(220px, 30vw, 320px);
+  object-fit: cover;
+  object-position: center 48%;
+}
+.shot figcaption {
+  padding: 11px 16px;
+  background: #fff;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
 .hero-card {
   background: #fff;
   border: 1px solid var(--line);
   border-radius: var(--radius-lg);
-  padding: 26px;
+  padding: 24px;
   box-shadow: var(--shadow-md);
 }
-.card-head { margin-bottom: 18px; }
+.hero-card .pill { margin-bottom: 16px; }
 .pill {
   display: inline-block;
   padding: 6px 12px;
@@ -486,26 +531,39 @@ a { color: var(--green-700); }
   padding: 52px 0 28px;
 }
 .foot-in {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: minmax(220px, 1fr) minmax(0, 1.6fr);
+  gap: 32px 48px;
+  align-items: start;
   padding-bottom: 28px;
   border-bottom: 1px solid rgba(255,255,255,.12);
 }
-.foot-brand { display: flex; gap: 14px; align-items: center; }
+.foot-brand { display: flex; gap: 14px; align-items: flex-start; }
 .foot-brand .brand-mark { background: rgba(255,255,255,.12); }
 .foot-brand strong { color: #fff; font: 600 18px/1.3 var(--serif); }
 .foot-brand p { margin: 4px 0 0; font-size: 14px; }
 
-.foot-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
-.foot-links a {
-  color: rgba(255,255,255,.78);
+.foot-cols {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px 32px;
+}
+.foot-col { display: flex; flex-direction: column; gap: 7px; }
+.foot-col h4 {
+  margin: 0 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.55);
+}
+.foot-col a {
+  color: rgba(255,255,255,.82);
   text-decoration: none;
   font-size: 14.5px;
 }
-.foot-links a:hover { color: #fff; }
+.foot-col a:hover { color: #fff; text-decoration: underline; }
+.foot-col p { margin: 0; font-size: 14.5px; color: rgba(255,255,255,.82); }
 
 .foot-bottom { padding-top: 22px; }
 .foot-bottom p { margin: 0 0 6px; font-size: 13px; }
@@ -520,6 +578,11 @@ a { color: var(--green-700); }
   .nav .btn-sm { display: none; }
   .mobile[data-open="true"] { display: flex; }
   .section h2 { max-width: none; }
+  .foot-in { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .foot-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 520px) {
