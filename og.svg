@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f5a42"/>
+      <stop offset="1" stop-color="#0a3f2f"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.6">
+      <stop offset="0" stop-color="#14805e" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0a3f2f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <g transform="translate(96 150)">
+    <rect width="88" height="88" rx="22" fill="#ffffff" fill-opacity="0.14"/>
+    <path d="M36 18h16v18h18v16H52v18H36V52H18V36h18V18z" fill="#ffffff"/>
+  </g>
+
+  <text x="96" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="600" fill="#ffffff">Farmacia Barberis</text>
+  <text x="96" y="392" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#ffffff" fill-opacity="0.78">Tu farmacia de confianza en Bariloche · desde el año 2000</text>
+
+  <rect x="96" y="450" width="1008" height="1" fill="#ffffff" fill-opacity="0.2"/>
+
+  <text x="96" y="512" font-family="Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">Onelli 397, San Carlos de Bariloche</text>
+  <text x="96" y="556" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#ffffff" fill-opacity="0.72">0294 452-4500</text>
+</svg>
