@@ -83,3 +83,14 @@ var HORARIOS = {
 Para un día cerrado, borrá la línea de ese día. El cartel del hero y el bloque
 "Hoy" se recalculan solos usando la hora de Argentina, sin importar desde dónde
 se visite el sitio.
+
+## Caché
+
+`styles.css` y `script.js` se enlazan con un sufijo de versión (`?v=2`) porque
+sus nombres no llevan hash. **Si los editás, subí ese número** en `index.html`
+— si no, los navegadores que ya visitaron el sitio pueden seguir usando la
+copia vieja.
+
+Las cabeceras de `vercel.json` sirven el CSS y el JS con `max-age=0,
+must-revalidate`, así que el navegador siempre pregunta si cambiaron. Las
+imágenes se cachean un día.
